@@ -101,8 +101,8 @@ let submit = document.getElementById("submit").addEventListener("click", () => {
         let value = document.getElementById("parameterValue" + (i + 1)).value;
         data[key] = value;
       }
-      data = JSON.stringify(data);
     }
+    data = JSON.stringify(data);
   } else {
     data = document.getElementById("requestJsonText").value;
   }
